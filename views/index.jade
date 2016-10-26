@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Please enter your Google Play login details below
+  form(name="input", action="login", method="post")
+    | E-mail:
+    input(type="text", name="email")
+
+    | Password:
+    input(type="password",name="password")
+
+    input(type="submit", value="Login!")
